@@ -33,7 +33,7 @@ public class MealyMachine extends Automaton {
             str.append(findLambda(actualState,ch.toString()));
             actualState = State.of(transition.finalState());
         }
-        log.info("Transdução: {}", str);
+        log.info("Cadeia original: {} \n Transdução: {}", sequence, str);
         return str.toString();
     }
 
